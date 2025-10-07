@@ -6,32 +6,22 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>🌍 Travel Planner</h1>
-      <p>Discover, plan, and dream about your next adventure!</p>
-    </header>
+    <h1>🌍 Travel Planner</h1>
+    <p>Discover, plan, and dream about your next adventure!</p>
+    <select id="countrySelect">
+      <option value="japan">Japan</option>
+      <option value="italy">Italy</option>
+      <option value="brazil">Brazil</option>
+    </select>
+    <br />
+    <button onclick="showDestination()">Show Info</button>
+    <button onclick="addToPlan()">Add to Plan</button>
+    <button onclick="clearPlan()">Clear Plan</button>
 
-    <main>
-      <select id="countrySelect">
-        <option value="japan">Japan</option>
-        <option value="italy">Italy</option>
-        <option value="brazil">Brazil</option>
-      </select>
-      <br />
-      <button onclick="showDestination()">Show Info</button>
-      <button onclick="addToPlan()">Add to Plan</button>
-      <button onclick="clearPlan()">Clear Plan</button>
+    <div id="travelInfo"></div>
 
-      <div id="travelInfo"></div>
-
-      <h2>My Travel Plan</h2>
-      <ul id="travelPlan"></ul>
-    </main>
-
-    <footer>
-      <p>Built with ❤️ by Future Web Developer</p>
-    </footer>
-
+    <h2>My Travel Plan</h2>
+    <ul id="travelPlan"></ul>
     <script type="module" src="script.js"></script>
   </body>
 </html>
